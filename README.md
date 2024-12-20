@@ -44,7 +44,6 @@ _Main dashboard with analytics and insights_
 
   - Column-based sorting
   - Ascending/descending options
-  - Multiple field support
 
 - **Interactive Chat**
 
