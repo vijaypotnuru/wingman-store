@@ -22,7 +22,7 @@ export default function OverViewPage() {
   return (
     <PageContainer scrollable>
       <div className="flex min-h-screen">
-        <main className="flex-1 ml-16  bg-white">
+        <main className="flex-1 bg-white">
           <div className="space-y-8 mx-8 my-4 py-8 px-6 border rounded-3xl bg-white">
             <div className="flex justify-between items-center">
               <h1 className="text-3xl ">At a glance</h1>

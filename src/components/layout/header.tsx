@@ -3,22 +3,20 @@ import React from "react";
 import { SidebarTrigger } from "../ui/sidebar";
 import { Separator } from "../ui/separator";
 import { Breadcrumbs } from "../breadcrumbs";
-import SearchInput from "../search-input";
-import { UserNav } from "./user-nav";
+
 import ThemeToggle from "./ThemeToggle/theme-toggle";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Header() {
   const router = useRouter();
   const pathname = usePathname();
-
   return (
-    <header className="flex px-[24px] py-[40px] shrink-0 items-center justify-between gap-2 border-b transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
-      <div className="flex items-center gap-3 px-4">
+    <header className="flex h-16 border-b lg:px-[24px] lg:py-[40px] shrink-0 items-center justify-between gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
+      <div className="flex items-center gap-2 px-4">
         <SidebarTrigger className="-ml-1" />
         <Separator orientation="vertical" className="mr-2 h-4" />
-
-        <div className="flex items-center gap-2 p-1 rounded-full">
+        {/* <Breadcrumbs /> */}
+        <div className="flex items-center gap-2 p-1 rounded-full hidden md:flex">
           <button
             onClick={() => router.push("/dashboard")}
             className={`flex items-center gap-2 px-4 py-3 rounded-full text-sm ${
@@ -86,12 +84,6 @@ export default function Header() {
             Chats
           </button>
         </div>
-      </div>
-
-      <div className="flex items-center gap-2 px-4">
-  
-
-        <ThemeToggle />
       </div>
     </header>
   );

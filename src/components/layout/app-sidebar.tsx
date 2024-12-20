@@ -69,14 +69,17 @@ export default function AppSidebar() {
             />
           </div>
           <div className="grid flex-1 text-left text-sm leading-tight">
-            <span className="truncate font-semibold">{company.name}</span>
-            <span className="truncate text-xs">{company.plan}</span>
+            <span className="truncate font-semibold">Wingman</span>
+            <span className="truncate text-xs">make a purchase</span>
           </div>
         </div>
+        <hr className="my-3 border-t border-[#134E48]" />
       </SidebarHeader>
       <SidebarContent className="overflow-x-hidden">
         <SidebarGroup>
-          <SidebarGroupLabel>Overview</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-[#CCFBEF]">
+            Overview
+          </SidebarGroupLabel>
           <SidebarMenu>
             {navItems.map((item) => {
               const Icon = item.icon ? Icons[item.icon] : Icons.logo;
@@ -149,11 +152,11 @@ export default function AppSidebar() {
                       src={session?.user?.image || ""}
                       alt={session?.user?.name || ""}
                     />
-                    <AvatarFallback className="rounded-lg">
-                      {session?.user?.name?.slice(0, 2)?.toUpperCase() || "CN"}
+                    <AvatarFallback className="rounded-lg bg-[#115E56]">
+                      <Icons.setting />
                     </AvatarFallback>
                   </Avatar>
-                  <div className="grid flex-1 text-left text-sm leading-tight">
+                  <div className="grid flex-1 text-left text-sm text-[#CCFBEF] leading-tight">
                     <span className="truncate font-semibold">
                       {session?.user?.name || ""}
                     </span>
@@ -161,7 +164,7 @@ export default function AppSidebar() {
                       {session?.user?.email || ""}
                     </span>
                   </div>
-                  <ChevronsUpDown className="ml-auto size-4" />
+                  <ChevronsUpDown className="ml-auto size-4 text-[#CCFBEF]" />
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
               <DropdownMenuContent
