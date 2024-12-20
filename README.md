@@ -20,11 +20,6 @@ _Main dashboard with analytics and insights_
 
 ## ✨ Project Specifications Implemented
 
-- **Responsive Design**
-
-  - Mobile-friendly layout
-  - Adaptive components
-  - Flexible grid system
 
 - **React/Next.js Implementation**
 
@@ -36,7 +31,7 @@ _Main dashboard with analytics and insights_
 
   - Custom API routes
   - Mock order data
-  - Simulated chat responses using Gemini API
+  - AI chat responses using Gemini API
 
 - **Styling**
   - Tailwind CSS
@@ -55,10 +50,8 @@ _Main dashboard with analytics and insights_
 
   - Real-time messaging
   - AI response powered by Gemini API
-  - Chat history
 
 - **Pagination**
-  - Page navigation
   - Items per page control
   - Total entries display
 
