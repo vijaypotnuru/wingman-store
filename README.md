@@ -4,7 +4,7 @@ A frontend implementation of the provided Figma design using Next.js and modern 
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://wingman-store-iota.vercel.app/)
+[View Live Demo](https://wingman-store-iota.vercel.app/) https://wingman-store-iota.vercel.app/
 
 ## 📸 Screenshots
 
