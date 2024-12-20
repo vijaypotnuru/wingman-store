@@ -10,13 +10,13 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Loader } from "lucide-react";
 import { signIn } from "next-auth/react";
 import { useSearchParams } from "next/navigation";
 import { useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import * as z from "zod";
-
 
 const formSchema = z.object({
   email: z.string().email({ message: "Enter a valid email address" }),
@@ -77,6 +77,7 @@ export default function UserAuthForm() {
             className="ml-auto w-full bg-[#115E56] text-[#ffffff]"
             type="submit"
           >
+            {loading && <Loader className="mr-2 h-4 w-4 animate-spin" />}
             Continue With Email
           </Button>
         </form>
