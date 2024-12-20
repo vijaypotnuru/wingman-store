@@ -51,7 +51,7 @@ export default function ChatModal({
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           {/* AI Message */}
           <div className="flex items-start gap-3">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+            <div className="w-8 h-8 bg-[#94A3B8] rounded-lg flex items-center justify-center text-white">
               AI
             </div>
             <div className="bg-gray-100 rounded-2xl p-4 max-w-[80%]">
@@ -67,7 +67,7 @@ export default function ChatModal({
             <div className="w-8 h-8 bg-gray-200 rounded-lg flex items-center justify-center">
               U
             </div>
-            <div className="bg-primary text-white rounded-2xl p-4 max-w-[80%]">
+            <div className="bg-[#115E56] text-white rounded-2xl p-4 max-w-[80%]">
               <p>I have a question about the delivery time.</p>
               <span className="text-xs opacity-70 mt-1 block">10:25 AM</span>
             </div>
@@ -89,7 +89,7 @@ export default function ChatModal({
                 // Handle send message
                 setMessage("");
               }}
-              className="bg-primary text-white px-6 py-3 rounded-xl hover:bg-primary-dark transition-colors"
+              className="bg-[#115E56] text-white px-6 py-3 rounded-xl hover:bg-primary-dark transition-colors"
             >
               Send
             </button>
