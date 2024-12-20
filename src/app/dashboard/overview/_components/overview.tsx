@@ -1,19 +1,19 @@
-import { AreaGraph } from './area-graph';
-import { BarGraph } from './bar-graph';
-import { PieGraph } from './pie-graph';
-import { CalendarDateRangePicker } from '@/components/date-range-picker';
-import PageContainer from '@/components/layout/page-container';
-import { RecentSales } from './recent-sales';
-import { Button } from '@/components/ui/button';
+import { AreaGraph } from "./area-graph";
+import { BarGraph } from "./bar-graph";
+import { PieGraph } from "./pie-graph";
+import { CalendarDateRangePicker } from "@/components/date-range-picker";
+import PageContainer from "@/components/layout/page-container";
+import { RecentSales } from "./recent-sales";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle
-} from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { MessageCircle, TrendingUp } from 'lucide-react';
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { MessageCircle, TrendingDown, TrendingUp } from "lucide-react";
 
 export default function OverViewPage() {
   return (
@@ -23,16 +23,15 @@ export default function OverViewPage() {
           <h2 className="text-2xl font-bold tracking-tight">At a glance</h2>
           <div className="hidden items-center space-x-2 md:flex">
             <CalendarDateRangePicker />
-            <Button>Download</Button>
           </div>
         </div>
         <Tabs defaultValue="overview" className="space-y-4">
-          <TabsList>
+          {/* <TabsList>
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="analytics" disabled>
               Analytics
             </TabsTrigger>
-          </TabsList>
+          </TabsList> */}
           <TabsContent value="overview" className="space-y-4">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <Card>
@@ -57,7 +56,7 @@ export default function OverViewPage() {
                 <CardHeader className="flex flex-row items-center gap-2 pb-2">
                   <MessageCircle className="h-4 w-4 text-slate-500" />
                   <CardTitle className="text-sm font-medium text-slate-500">
-                    CONSULTATIONS
+                    ORDERS PLACED
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
@@ -65,9 +64,9 @@ export default function OverViewPage() {
                     24
                   </div>
                   <div className="flex items-center gap-1">
-                    <TrendingUp className="h-4 w-4 text-emerald-500" />
-                    <span className="font-medium text-emerald-500">15%</span>
-                    <span className="text-sm text-slate-500">increase</span>
+                    <TrendingDown className="h-4 w-4 text-red-500" />
+                    <span className="font-medium text-red-500">12</span>
+                    <span className="text-sm text-slate-500">decrease</span>
                   </div>
                 </CardContent>
               </Card>

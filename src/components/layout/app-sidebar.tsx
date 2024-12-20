@@ -122,6 +122,7 @@ export default function AppSidebar() {
                     asChild
                     tooltip={item.title}
                     isActive={pathname === item.url}
+                    className="text-[#CCFBEF] hover:bg-[#ffffff] hover:text-[#115E56] data-[active=true]:bg-[#ffffff] data-[active=true]:text-[#115E56]"
                   >
                     <Link href={item.url}>
                       <Icon />
