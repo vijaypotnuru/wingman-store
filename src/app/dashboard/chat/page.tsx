@@ -1,7 +1,7 @@
 import ChatPage from "./_components/chatpage";
 
 export const metadata = {
-  title: "Dashboard : Chat",
+  title: "Dashboard : Ai Chat",
 };
 
 export default function page() {
