@@ -102,6 +102,3 @@ _Main dashboard with analytics and insights_
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
----
-
-This adds clarity about using the Gemini API for the AI chatbot while maintaining a professional and structured format. Let me know if you’d like any further adjustments!
