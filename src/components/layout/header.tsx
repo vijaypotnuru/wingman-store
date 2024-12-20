@@ -2,9 +2,9 @@
 import React from "react";
 import { SidebarTrigger } from "../ui/sidebar";
 import { Separator } from "../ui/separator";
-import { Breadcrumbs } from "../breadcrumbs";
 
-import ThemeToggle from "./ThemeToggle/theme-toggle";
+
+
 import { usePathname, useRouter } from "next/navigation";
 
 export default function Header() {
@@ -19,11 +19,10 @@ export default function Header() {
         <div className="flex items-center gap-2 p-1 rounded-full hidden md:flex">
           <button
             onClick={() => router.push("/dashboard")}
-            className={`flex items-center gap-2 px-4 py-3 rounded-full text-sm ${
-              pathname === "/dashboard/overview"
-                ? "bg-[#CCFBEF] shadow-sm text-gray-900"
-                : "text-gray-500 hover:text-gray-700"
-            }`}
+            className={`flex items-center gap-2 px-4 py-3 rounded-full text-sm ${pathname === "/dashboard/overview"
+              ? "bg-[#CCFBEF] shadow-sm text-gray-900"
+              : "text-gray-500 hover:text-gray-700"
+              }`}
           >
             <svg
               width="18"
@@ -41,11 +40,10 @@ export default function Header() {
           </button>
           <button
             onClick={() => router.push("/dashboard/sales")}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm ${
-              pathname === "/dashboard/sales"
-                ? "bg-[#CCFBEF] shadow-sm text-gray-900"
-                : "text-gray-500 hover:text-gray-700"
-            }`}
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm ${pathname === "/dashboard/sales"
+              ? "bg-[#CCFBEF] shadow-sm text-gray-900"
+              : "text-gray-500 hover:text-gray-700"
+              }`}
           >
             <svg
               width="18"
@@ -63,11 +61,10 @@ export default function Header() {
           </button>
           <button
             onClick={() => router.push("/dashboard/chat")}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm ${
-              pathname === "/dashboard/chat"
-                ? "bg-[#CCFBEF] shadow-sm text-gray-900"
-                : "text-gray-500 hover:text-gray-700"
-            }`}
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm ${pathname === "/dashboard/chat"
+              ? "bg-[#CCFBEF] shadow-sm text-gray-900"
+              : "text-gray-500 hover:text-gray-700"
+              }`}
           >
             <svg
               width="17"
